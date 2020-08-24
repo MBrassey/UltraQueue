@@ -3,16 +3,22 @@
 }
 
 :root {
-  --primary: #44e9ff;
-  --secondary: #497980;
-  --tertiary: rgb(192, 246, 253);
-  --grey: #333;
-  font-size: 62.5%;
+    --Azure: #2994cb;
+    --Absinthe: #a3de9e;
+    --Sky: #394b59;
+    --Anthracite: #2a2a2a;
+    --Jet: #141414;
+    --Night: #181818;
+    --Stone: #6c757d;
+    --Zinc: #cfd2d0;
+    --Absinthe-alpha: rgba(163, 222, 158, 0.8);
+    --Shadow-Alpha: rgba(0, 0, 0, 0.5);
+    font-size: 62.5%;
 }
 
 body {
-  background: #ededed;
-  color: var(--grey);
+  background: var(--Night);
+
   margin: 0;
   padding: 0;
   display: flex;
@@ -22,13 +28,13 @@ body {
 }
 
 header {
-  background: var(--secondary);
+  background: var(--Sky);
   padding: 30px 25px;
-  border-bottom: 5px solid var(--primary);
+  border-bottom: 5px solid var(--Azure);
 }
 
 header p {
-  color: var(--tertiary);
+  color: var(--Absinthe);
   margin: 5px 0 20px;
   font-size: 2rem;
 }
@@ -50,7 +56,7 @@ form input {
   padding: 12px;
   width: 100%;
   font-size: 2.2rem;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--Azure);
   border-radius: 12px;
 }
 
@@ -61,11 +67,11 @@ form .form-group {
 
 footer {
   width: 100%;
-  background: var(--secondary);
-  color: var(--tertiary);
+  background: var(--Sky);
+  color: var(--Azure);
   font-size: 2.6rem;
   padding: 20px;
-  border-top: 5px solid var(--primary);
+  border-top: 5px solid var(--Azure);
 }
 
 footer p {
@@ -82,7 +88,7 @@ footer p {
 }
 
 .page-title {
-  color: var(--primary);
+  color: var(--Azure);
   margin-bottom: 5px;
   margin-top: 0;
   font-size: 4.5rem;
@@ -103,7 +109,7 @@ footer p {
 }
 
 .list-title {
-  color: var(--secondary);
+  color: var(--Absinthe);
   font-size: 2.6rem;
 }
 
@@ -111,16 +117,16 @@ footer p {
   list-style: none;
   padding: 15px;
   height: calc(100% - 50px);
-  background: rgb(196, 196, 196);
+  background: var(--Sky);
   border-radius: 12px;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--Azure);
 }
 
 .task-item {
-  color: var(--grey);
+  color: var(--Jet);
   padding: 15px 15px;
-  border: 2px solid var(--grey);
-  background: var(--tertiary);
+  border: 2px solid var(--Azure);
+  background: var(--Absinthe-alpha);
   border-radius: 12px;
   margin-bottom: 20px;
 }
@@ -131,7 +137,7 @@ footer p {
 }
 
 .task-type {
-  color: var(--secondary);
+  color: var(--Sky);
   font-size: 1.55rem;
 }
 .task-actions {
@@ -152,20 +158,20 @@ footer p {
   border: none;
   display: inline-block;
   padding: 10px 15px;
-  background: var(--primary);
+  background: var(--Absinthe);
   font-size: 2.2rem;
   border-radius: 12px;
   position: relative;
   top: -3px;
-  box-shadow: 0 3px var(--grey);
+  box-shadow: 0 3px var(--Shadow-Alpha);
 }
 
 .btn:hover {
-  box-shadow: 0 2px var(--grey);
+  box-shadow: 0 2px var(--Shadow-Alpha);
   top: -2px;
 }
 .btn:active {
-  box-shadow: 0 0px var(--grey);
+  box-shadow: 0 0px var(--Shadow-Alpha);
   top: 0;
 }
 
@@ -174,26 +180,26 @@ footer p {
   font-size: 1.4rem;
   padding: 5px 7px;
   margin: 3px;
-  background: var(--secondary);
-  color: #fff;
+  background: var(--Sky);
+  color: var(--Zinc);
 }
 
 .select-dropdown,
 .select-status {
   display: block;
   font-size: 2.2rem;
-  color: #444;
+  color: var(--Stone);
   padding: 12px;
   width: 100%;
   max-width: 100%;
   margin: 0;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--Azure);
   border-radius: 12px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
-  background-image: url("../images/select-arrow.svg");
+  background-color: var(--Absinthe);
+  background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -212,15 +218,16 @@ footer p {
 
 .select-dropdown:hover,
 .select-status:hover {
-  border-color: #888;
+  border-color: var(--Azure);
+  color: var(--Sky);
 }
 
 .select-dropdown:focus,
 .select-status:focus {
-  border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  border-color: var(--Azure);
+  box-shadow: 0 0 1px 3px var(--Azure);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
+  color: var(--Azure);
   outline: none;
 }
 .select-dropdown option,
