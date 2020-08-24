@@ -199,11 +199,12 @@ var dropZoneDragHandler = function (event) {
     var taskListEl = event.target.closest(".task-list");
     if (taskListEl) {
         event.preventDefault();
-        taskListEl.setAttribute("style", "background: rgba(41, 148, 203, 1); border-style: solid;");
+        taskListEl.setAttribute("style", "background: rgba(108, 117, 125, 1); border-style: solid;");
     }
 };
 
 var dropTaskHandler = function (event) {
+    event.stopPropagation();
     var id = event.dataTransfer.getData("text/plain");
     var draggableElement = document.querySelector("[data-task-id='" + id + "']");
     var dropZoneEl = event.target.closest(".task-list");
