@@ -1,5 +1,5 @@
 # UltraQueue
-Personal kanban board with reward system 
+Personal Kanban Style Queue
 
 - [x] [Initital Setup](https://github.com/luc1dLife/taskinator/issues/1)
 - [x] [Capture Form Data](https://github.com/luc1dLife/taskinator/issues/2)
