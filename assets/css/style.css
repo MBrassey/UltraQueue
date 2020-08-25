@@ -227,23 +227,19 @@ footer p {
 
 .select-dropdown:hover,
 .select-status:hover {
-  border-color: var(--Azure);
   color: var(--Sky);
   background-color: var(--Zinc);
 }
 
 .select-dropdown:focus,
 .select-status:focus {
-  border-color: var(--Azure);
-  box-shadow: 0 0 1px 3px var(--Azure);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: var(--Azure);
+  background-color: var(--Zinc);
   outline: none;
 }
+
 .select-dropdown option,
 .select-status option {
-  font-weight: normal;
-  font-size: 2rem;
+  background-color: var(--Zinc); 
 }
 
 @media screen and (max-width: 980px) {

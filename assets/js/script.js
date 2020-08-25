@@ -9,9 +9,8 @@ var tasks = [];
 var taskFormHandler = function (event) {
     event.preventDefault();
     var taskNameInput = document.querySelector("input[name='task-name']").value;
-    console.dir(taskNameInput);
     var taskTypeInput = document.querySelector("select[name='task-type']").value;
-    console.log(taskTypeInput);
+
     // check if input values are empty strings
     if (!taskNameInput || !taskTypeInput) {
         alert("You need to fill out the task form!");
@@ -44,7 +43,7 @@ var createTaskEl = function (taskDataObj) {
     taskInfoEl.className = "task-info";
     taskInfoEl.innerHTML = "<h3 class='task-name'>" + taskDataObj.name + "</h3><span class='task-type'>" + taskDataObj.type + "</span>";
     listItemEl.appendChild(taskInfoEl);
-    
+
     var taskActionsEl = createTaskActions(taskIdCounter);
     listItemEl.appendChild(taskActionsEl);
 
@@ -210,6 +209,8 @@ var dropZoneDragHandler = function (event) {
 };
 
 var dropTaskHandler = function (event) {
+    event.stopPropagation();
+    event.preventDefault();
     var id = event.dataTransfer.getData("text/plain");
     var draggableElement = document.querySelector("[data-task-id='" + id + "']");
     var dropZoneEl = event.target.closest(".task-list");
@@ -236,6 +237,10 @@ var dropTaskHandler = function (event) {
 };
 
 var dragLeaveHandler = function (event) {
+
+    // this took me 4 hours to figure out, and mostly fixed dragging for Firefox
+    event.stopPropagation();
+    event.preventDefault();
     var taskListEl = event.target.closest(".task-list");
     if (taskListEl) {
         taskListEl.removeAttribute("style");
