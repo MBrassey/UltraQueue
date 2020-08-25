@@ -208,6 +208,15 @@ var dropZoneDragHandler = function (event) {
     }
 };
 
+var dragLeaveHandler = function (event) {
+    var taskListEl = event.target.closest(".task-list");
+    if (taskListEl) {
+        // added support for firefox, to prevent default here
+        event.preventDefault();
+        taskListEl.removeAttribute("style");
+    }
+};
+
 var dropTaskHandler = function (event) {
     event.stopPropagation();
     event.preventDefault();
@@ -234,17 +243,6 @@ var dropTaskHandler = function (event) {
         }
     }
     saveTasks();
-};
-
-var dragLeaveHandler = function (event) {
-
-    // this took me 4 hours to figure out, and mostly fixed dragging for Firefox
-    event.stopPropagation();
-    event.preventDefault();
-    var taskListEl = event.target.closest(".task-list");
-    if (taskListEl) {
-        taskListEl.removeAttribute("style");
-    }
 };
 
 var saveTasks = function () {
