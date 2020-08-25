@@ -201,7 +201,8 @@ var dragTaskHandler = function (event) {
 };
 
 var dropZoneDragHandler = function (event) {
-    var taskListEl = event.target.closest(".task-list");
+    // made global to assist with dragLeaveHandler and fix firefox support
+    taskListEl = event.target.closest(".task-list");
     if (taskListEl) {
         event.preventDefault();
         taskListEl.setAttribute("style", "background: rgba(108, 117, 125, 1); border-style: solid;");
@@ -209,9 +210,7 @@ var dropZoneDragHandler = function (event) {
 };
 
 var dragLeaveHandler = function (event) {
-    var taskListEl = event.target.closest(".task-list");
     if (taskListEl) {
-        // added support for firefox, to prevent default here
         event.preventDefault();
         taskListEl.removeAttribute("style");
     }
