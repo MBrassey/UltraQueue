@@ -1,10 +1,11 @@
-#### UltraQueue
+## UltraQueue
 
 Personal kanban style queue that saves to localstorage.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
 #### Issues
+
 - [x] [Initital Setup](https://github.com/MBrassey/UltraQueue/issues/1)
 - [x] [Capture Form Data](https://github.com/MBrassey/UltraQueue/issues/2)
 - [x] [Change Task](https://github.com/MBrassey/UltraQueue/issues/3)
@@ -18,9 +19,11 @@ Personal kanban style queue that saves to localstorage.
 [<p align="center"><img src="assets/img/Preview.png">](https://MBrassey.github.io/UltraQueue/)
 
 #### Questions
+
 Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
 
 #### License
+
 `UltraQueue` is published under the __CC0_1.0_Universal__ license.
 
 > The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
