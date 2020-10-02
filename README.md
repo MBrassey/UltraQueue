@@ -4,6 +4,7 @@ Personal kanban style queue that saves to localstorage.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
+#### Issues
 - [x] [Initital Setup](https://github.com/MBrassey/UltraQueue/issues/1)
 - [x] [Capture Form Data](https://github.com/MBrassey/UltraQueue/issues/2)
 - [x] [Change Task](https://github.com/MBrassey/UltraQueue/issues/3)
