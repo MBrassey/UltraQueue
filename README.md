@@ -1,6 +1,6 @@
 ## UltraQueue
 
-Personal kanban style queue that saves to localstorage. Now packaged as a desktop application for Windows, Mac & Linux. 
+Personal kanban style queue that saves to localstorage. Desktop-app for Windows, Mac & Linux available below. 
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
