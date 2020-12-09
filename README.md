@@ -1,6 +1,6 @@
 ## UltraQueue
 
-Personal kanban style queue that saves to localstorage.
+Personal kanban style queue that saves to localstorage. Now packaged as a desktop application for Windows, Mac & Linux. 
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
@@ -13,6 +13,10 @@ Personal kanban style queue that saves to localstorage.
 - [x] [Add persistence and optimization](https://github.com/MBrassey/UltraQueue/issues/5)
 - [x] [Stylize](https://github.com/MBrassey/UltraQueue/issues/6)
 - [x] [Firefox support & Style bubbling](https://github.com/MBrassey/UltraQueue/issues/7)
+
+#### Download
+
+[Releases](https://github.com/MBrassey/UltraQueue/releases/tag/1.0.0)
 
 <h6><p align="right">:cyclone: Click the image(s) below to view the live <a id="Screenshots" href="https://MBrassey.github.io/UltraQueue/">webapplication</a></p></h6>
 
